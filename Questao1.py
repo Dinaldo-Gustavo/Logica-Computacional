@@ -1,0 +1,72 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "84038013-22cc-4187-99f2-a767524bef58",
+   "metadata": {},
+   "source": [
+    "## Nome: Dinaldo Gustavo da Rocha Ribeiro\n",
+    "## Turma: 2º Semestre CDN\n",
+    "## Data: 29/09/25\n",
+    "## Versão: 3.6"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fde813cb-4a60-4731-8420-7f4b13864fc4",
+   "metadata": {},
+   "source": [
+    "## Q1) Conjunção (AND) – “Oferta de vaga”"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "06fa28fb-2d83-4141-9d1f-c18ef581b00a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ra = 3011542513011 # Meu RA\n",
+    "soma_ra = 3 + 0 + 1 + 1 + 5 + 4 + 2 + 5 + 1 + 3 + 0 + 1 + 1 # Somatório do RA\n",
+    "print(\"A soma do RA foi:\", soma_ra) # Resultado do somatório do RA\n",
+    "print(\"O somatório do RA vezes 150 foi:\", soma_ra * 150) # Resultado do somatório do RA vezes 150\n",
+    "\n",
+    "# Entradas\n",
+    "salario = float(input(\"Qual o salário da vaga? \")) # OBS: replace(\",\", \".\") não pode ser usado com variáveis tipo float, somente str\n",
+    "trabalho_normalizado = str(input(\"O trabalho é homeoffice ou presencial? \")).replace(\" \", \"\").lower()\n",
+    "\n",
+    "p = (salario >= soma_ra * 150) # Se o salário for maior que a soma do RA vezes 150 é True\n",
+    "q = (trabalho_normalizado == \"homeoffice\") # Se o trabalho for homeoffice é True\n",
+    "\n",
+    "# Saídas\n",
+    "if p and q: # Se ambas as condições forem True, a vaga é boa\n",
+    "    print(\"p =\", p, \"| q =\", q) \n",
+    "    print(\"Bom\")\n",
+    "else: # Se qualquer uma das condições for False, a vaga é ruim\n",
+    "    print(\"p =\", p, \"| q =\", q) \n",
+    "    print(\"Ruim\")"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
